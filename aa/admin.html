@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+</head>
+<body>
+<h3>nhập tên người dùng </h3>
+<input type="text" id="name">
+<button onclick="usename()" >kiểm tra</button>
+<p id="result"></p>
+</body>
+<script>
+    function usename()
+    {
+    let usename=parseFloat(document.getElementById("name").value);
+    let pass=prompt("password",'');
+    let result=document.getElementById("result");
+    if(usename=="Admin")
+    {
+   if(pass==" TheMaster")
+   {
+       result.innerHTML=document.write("Welcome");
+
+   }
+   if(pass="null")
+        {
+            result.innerHTML=document.write("Canceled");
+        }
+   else
+        {
+            result.innerHTML=document.write("Wrong password");
+   }
+
+   }
+    if(usename="null")
+    {
+        result.innerHTML=document.write("canceld");
+    }
+
+    else{
+        result.innerHTML=document.write("“I don’t know you");
+    }
+    }
+</script>
+</html>
